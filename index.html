@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Rock Paper Scissors Game</h1><br>
+        <div class="row image-container">
+            <div class = "col-md-4">
+                <img class="click-image" src="Images/rock.png" alt="Image 1" data-id="rock">
+            </div>
+            <div class = "col-md-4">
+                <img class="click-image" src="Images/paper.png" alt="Image 2" data-id="paper">
+            </div>
+            <div class = "col-md-4">
+                <img class="click-image" src="Images/scissors.png" alt="Image 3" data-id="scissors">
+            </div>    
+            </div><br>
+        <div class="row display-container">
+            <div class = "col-md-4">
+                <h2>Computer</h2>
+                <span id ="computer-choice"></span>
+            </div>
+        <div class = "col-md-4">
+            <div class = "result-html">
+                <h3>RESULT </h3>
+            <h3><span id="result-display"></span></h3>
+            </div><br>
+            <div class = "score-html">
+            <h3>SCORE</h3>
+            <h3><span id="computerscore"></span>-<span id="userscore"></span></h3><br>
+            </div><br>        
+            <button type ="button" class="btn btn-primary btn-lg" id="reset">Reset Game</button>  
+        </div>
+        <div class = "col-md-4">
+            <h2>User</h2>
+            <span id = "user-choice"></span>
+        </div>
+</div>
+</div>
+    
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
